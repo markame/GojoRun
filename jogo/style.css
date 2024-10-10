@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+#gameArea {
+    width: 600px;
+    height: 200px;
+    border: 2px solid #000;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#player {
+    width: 60px;
+    height: 60px;
+    background-image: url('images/Satoru_Gojo.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: bottom 0.1s;
+}
+
+#obstacle {
+    width: 60px;
+    height: 60px;
+    background-image: url('images/Sukuna.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+    animation: moveObstacle 3s infinite linear;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+    color: red;
+}
+
+/* Animação para mover o obstáculo */
+@keyframes moveObstacle {
+    from {
+        right: -40px;
+    }
+    to {
+        right: 620px;
+    }
+}
