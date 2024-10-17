@@ -14,13 +14,12 @@ body {
     height: 200px;
     border: 2px solid #000;
     position: relative;
-    background-color: #fff;
     overflow: hidden;
 }
 
 #player {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     background-image: url('images/Satoru_Gojo.png');
     background-size: cover;
     position: absolute;
@@ -30,8 +29,8 @@ body {
 }
 
 #obstacle {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     background-image: url('images/Sukuna.png');
     background-size: cover;
     position: absolute;
@@ -45,6 +44,7 @@ body {
     top: 10px;
     left: 10px;
     font-size: 20px;
+    color:white
 }
 
 #gameOver {
